@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div style="text-align: center;"> 
+                <div>
+                    <h1>Login</h1>
+                    <h3>Please enter email Id & password!!</h3>
+                </div>
+               
+                <form>
+                    <div style="margin-bottom: 15px;">
+                        <label for="emailid" class="form-label">Email id : </label>
+                        <input type="text" class="form-control" id="emailid" #username placeholder="emai id">
+                      </div>
+                      <div style="margin-bottom: 15px;">
+                        <label for="password" class="form-label">Password : </label>
+                        <input type="password" class="form-control" id="password" #password placeholder="password">
+                      </div>
+                          <button (click)="login(username.value, password.value)" style="background-color: green; width: 86px; height: 35px; border-radius: 10px;" type="submit">Login</button>
+                </form>
+          
+            </div>
+        </div>
+    </div>
+</div>
